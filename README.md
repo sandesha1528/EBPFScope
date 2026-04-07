@@ -37,4 +37,4 @@ EBPFScope is a observability platform that attaches eBPF programs via kprobes, t
 - **WebSocket connection failed:** The frontend attempts to connect to `/ws`. If running via Vite dev server, ensure the proxy in `vite.config.ts` is active or change the dev URL.
 
 
-Author - Rohit Patil
+Author - Sandesha Wakchaure

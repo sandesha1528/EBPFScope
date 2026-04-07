@@ -1,4 +1,4 @@
-# EBPFScope — Project Report         Created By Rohit Patil.
+# EBPFScope — Project Report         Created By Sandesha Wakchaure.
 
 **"X-ray vision for your Linux kernel"**
 
@@ -479,4 +479,4 @@ open http://localhost
 
 ---
 
-Author - Rohit Patil
+Author - Sandesha Wakchaure
