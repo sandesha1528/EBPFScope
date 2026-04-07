@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-kernel: #58a6ff;
+  --color-user: #D85A30;
+  --color-inlined: #F0A500;
+  --color-text-tooltip: #c9d1d9;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: theme('colors.background');
+  color: theme('colors.gray.200');
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: theme('colors.border');
+}
+.recharts-text {
+  fill: theme('colors.gray.400') !important;
+}
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+.recharts-default-tooltip {
+  background-color: theme('colors.surface') !important;
+  border-color: theme('colors.border') !important;
+  border-radius: 6px;
+}
+
+.d3-flame-tooltip {
+  position: absolute;
+  background-color: theme('colors.surface');
+  border: 1px solid theme('colors.border');
+  padding: 8px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+  font-size: 13px;
+  color: var(--color-text-tooltip);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme('colors.background');
+}
+::-webkit-scrollbar-thumb {
+  background: theme('colors.border');
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.gray.600');
+}
